@@ -1,7 +1,7 @@
 cd "C:\Program Files\Oracle\VirtualBox"
 
-VBoxManage controlvm "BackupVM Name" poweroff
+VBoxManage controlvm "kali-linux-2024.1-virtualbox-amd64" poweroff
 
-SET "YYYYMMDD=%DATE:/=%"
+SET YYYYMMDD=%DATE:/=% 
 
-VBOXManage export BackupVM Name -o "output ovf export directory"
+VBOXManage export kali-linux-2024.1-virtualbox-amd64 -o "D:\OVF\kali\kali-linux-2024.1-virtualbox-amd64_%YYYYMMDD%.ova"
